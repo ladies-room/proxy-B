@@ -52,7 +52,7 @@ app.get('/property/:id', (req, res) => {
 
 //Calendar
 app.get("/listing", (req, res) => {
-  axios.get(`http://localhost:2046/listing/`)
+  axios.get(`http://3.17.161.89:2046/listing/`)
     .then(response => {
       res.send(response.data);
     })
